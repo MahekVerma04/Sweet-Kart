@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #ffe1e1;
+  padding-bottom: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #fff0f0;
+}
+
+nav .logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #d36f6f;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #d36f6f;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #c25757;
+}
+
+.hero p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.hero button {
+  background-color: #d36f6f;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.hero button:hover {
+  background-color: #c25757;
+}
+
+.products {
+  padding: 60px 10%;
+  background-color: #fff8f2;
+}
+
+.products h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #d36f6f;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border: 1px solid #f2d4d4;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #ffe1e1;
+  color: #666;
+}
+
+
+
+//main style extra
+
+.why-us {
+  background-color: #fff3f3;
+  padding: 40px 20px;
+  text-align: center;
+  padding-top:20px;
+}
+
+.why-us h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #d36f6f;
+}
+
+.why-us ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.why-us li {
+  font-size: 1.1em;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #ffeaea;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+//gallery
+
+.gallery {
+  padding-bottom:20px;
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+  
+}
+
+.gallery h2 {
+
+  font-size: 2em;
+  color: #d36f6f;
+  margin-bottom: 30px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+h2{
+  text-align: center;
+}
