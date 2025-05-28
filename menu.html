@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/styleMenu.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">SweetKart</div>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Our Menu</h1>
+            <p>Explore the delicious variety we offer every day!</p>
+        </div>
+    </header>
+
+    <section class="products">
+        <div class="category-bar">
+            <div class="category-tab active" onclick="showCategory('cakes', event)">🎂 Cakes</div>
+            <div class="category-tab" onclick="showCategory('cupcakes', event)">🧁 Cupcakes</div>
+            <div class="category-tab" onclick="showCategory('cookies', event)">🍪 Cookies</div>
+
+        </div>
+
+        <div id="cakes" class="category-items active">
+            <div class="item-card">
+                <img src="images/cake_vanilla.avif" alt="Vanilla Cake">
+                <h4>Vanilla Cake</h4>
+                <p>₹149</p>
+            </div>
+            <div class="item-card">
+                <img src="images/cake_blueberry.jpg" alt="Blueberry Cake">
+                <h4>Blueberry Cake</h4>
+                <p>₹159</p>
+            </div>
+            <div class="item-card">
+                <img src="images/cake_lemon.jpg" alt="Lemon Cake">
+                <h4>Lemon Cake</h4>
+                <p>₹139</p>
+            </div>
+            <div class="item-card">
+                <img src="images/cake_red velvet_heart.jpg" alt="Red Velvet Cake">
+                <h4>Red Velvet Cake</h4>
+                <p>₹179</p>
+            </div>
+            <div class="item-card">
+                <img src="images/cake_biscoff.webp" alt="Biscoff Cake">
+                <h4>Biscoff Cake</h4>
+                <p>₹149</p>
+            </div>
+            <div class="item-card">
+                <img src="images/cake_chocolate-truffle-cake.webp" alt="Choco Truffle Cake">
+                <h4>Choco Truffle Cake</h4>
+                <p>₹139</p>
+            </div>
+            <div class="item-card">
+                <img src="images/cake_confetti.jpg" alt="Confetti Cake">
+                <h4>Confetti Cake</h4>
+                <p>₹169</p>
+            </div>
+            <div class="item-card">
+                <img src="images/cake_strawberry.jpg" alt="Strawberry Cake">
+                <h4>Strawberry Cake</h4>
+                <p>₹199</p>
+            </div>
+
+
+        </div>
+
+
+        <div id="cupcakes" class="category-items">
+            <div class="item-card">
+                <img src="images/cupcake_choclate.jpeg" alt="Chocolate Cupcake">
+                <h4>Chocolate Cupcake</h4>
+                <p>₹149</p>
+            </div>
+            <div class="item-card">
+                <img src="images/ccake_blueberry.jpeg" alt="Blueberry Cupcake">
+                <h4>Blueberry Cupcake</h4>
+                <p>₹159</p>
+            </div>
+            <div class="item-card">
+                <img src="images/ccake_lemon.jpeg" alt="Lemon Cupcake">
+                <h4>Lemon Cupcake</h4>
+                <p>₹139</p>
+            </div>
+            <div class="item-card">
+                <img src="images/ccake_redv.jpeg" alt="Red Velvet Cupcake">
+                <h4>Red Velvet Cupcake</h4>
+                <p>₹179</p>
+            </div>
+            <div class="item-card">
+                <img src="images/ccake_buttercream.jpeg" alt="Buttercream Cupcake">
+                <h4>Buttercream Cupcake</h4>
+                <p>₹149</p>
+            </div>
+            <div class="item-card">
+                <img src="images/ccake_vannila.jpeg" alt="Vanilla Cupcake">
+                <h4>Vanilla Cupcake</h4>
+                <p>₹139</p>
+            </div>
+            <div class="item-card">
+                <img src="images/ccake_daisy.jpeg" alt="Daisy Cupcake">
+                <h4>Daisy Cupcake</h4>
+                <p>₹169</p>
+            </div>
+            <div class="item-card">
+                <img src="images/ccake_heart.jpeg" alt="Heart Cupcake">
+                <h4>Heart Cupcake</h4>
+                <p>₹199</p>
+            </div>
+
+        </div>
+
+        <div id="cookies" class="category-items">
+            <div class="item-card">
+                <img src="images/cookie_blueberry.jpg" alt="Blueberry cookie">
+                <h4>Blueberry cookie</h4>
+                <p>₹149</p>
+            </div>
+            <div class="item-card">
+                <img src="images/cookie_oatmeal.jpeg" alt="Oatmeal cookie">
+                <h4>Oatmeal Cookie</h4>
+                <p>₹159</p>
+            </div>
+            <div class="item-card">
+                <img src="images/cookie_oreo.jpg" alt="Oreo Cookie">
+                <h4>Oreo Cookie</h4>
+                <p>₹139</p>
+            </div>
+            <div class="item-card">
+                <img src="images/cookie_redelvet.webp" alt="Red Velvet Cookie">
+                <h4>Red Velvet Cookie</h4>
+                <p>₹179</p>
+            </div>
+            <div class="item-card">
+                <img src="images/cookie_confetti.webp" alt="Confetti Cookie">
+                <h4>Confetti Cooki</h4>
+                <p>₹149</p>
+            </div>
+            <div class="item-card">
+                <img src="images/cookie_choc.jpeg" alt="Chocolate cookie">
+                <h4>Chocolate Cookie</h4>
+                <p>₹139</p>
+            </div>
+            <div class="item-card">
+                <img src="images/cookie_crumble.jpeg" alt="Crumble Cookie">
+                <h4>Crumble Cookie</h4>
+                <p>₹169</p>
+            </div>
+            <div class="item-card">
+                <img src="images/cookie_biscoff.jpg" alt="Biscoff cookie">
+                <h4>Biscoff ookie</h4>
+                <p>₹199</p>
+            </div>
+            <div class="item-card">
+                <img src="images/cookie_lemon.jpg" alt="Lemon cookie">
+                <h4>Lemon Cookie</h4>
+                <p>₹199</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SweetKart. Freshness guaranteed!</p>
+    </footer>
+
+    <script>
+        function showCategory(category, event) {
+            const categories = document.querySelectorAll('.category-items');
+            categories.forEach(cat => cat.classList.remove('active'));
+            document.getElementById(category).classList.add('active');
+
+            const tabs = document.querySelectorAll('.category-tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/style3.css" />
+  <link rel="stylesheet" href="css/styleContact.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">SweetKart</div>
+      <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you!</p>
+    </div>
+  </header>
+
+  <section class="products">
+    <h2>Get In Touch</h2>
+    <form class="contact-form" id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formMsg" style="text-align:center; color:#d36f6f; margin-top:15px;"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SweetKart. Let’s bake together!</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("contactForm");
+      const msg = document.getElementById("formMsg");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        msg.innerText = "Thank you for reaching out! We'll get back to you soon.";
+        form.reset();
+      });
+    });
+  </script>
+</body>
+</html>
